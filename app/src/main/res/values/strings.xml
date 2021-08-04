@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IntCalculator</string>
+    <string name="title_activity_result">ActivityResult</string>
+    <string name="title_activity_act_results">ActResults</string>
+</resources>
