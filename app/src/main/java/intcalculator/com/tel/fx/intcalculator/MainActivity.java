@@ -141,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
                                 bundle.putString("cabonado", Double.toString(capitalab));
                                 bundle.putString("intereses",Double.toString(interespendiente));
                                 bundle.putString("diasintereses",Double.toString(dias));
+                                bundle.putString("total",Double.toString(capitalactual + interespendiente));
                                 intent.putExtras(bundle);
 
                                 startActivity(intent);
