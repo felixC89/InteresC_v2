@@ -15,6 +15,7 @@ public class Result extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         final TextView Pendiente = findViewById(R.id.tvPendiente);
+        final TextView Tasa = findViewById(R.id.tvtasa);
         final TextView Abonados = findViewById(R.id.tvAbonado);
         final TextView Interes = findViewById(R.id.tvInteres);
         final TextView Total = findViewById(R.id.tvtotal);
@@ -27,6 +28,7 @@ public class Result extends AppCompatActivity {
         bundle = getIntent().getExtras();
 
         Pendiente.setText(formato.format(Double.valueOf(bundle.getString("cpendiente")).doubleValue()));
+        Tasa.setText(bundle.getString("tasa")+"%");
         Abonados.setText(bundle.getString("cabonado"));
         Interes.setText(formato.format(Double.valueOf(bundle.getString("intereses")).doubleValue())+"("+bundle.getString("diasintereses")+" días)");
         Total.setText(formato.format(Double.valueOf(bundle.getString("total")).doubleValue()));

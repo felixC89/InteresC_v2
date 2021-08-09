@@ -138,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 Bundle bundle = new Bundle();
                                 bundle.putString("cpendiente",Double.toString(cappend));
+                                bundle.putString("tasa", interes.getText().toString());
                                 bundle.putString("cabonado", Double.toString(capitalab));
                                 bundle.putString("intereses",Double.toString(interespendiente));
                                 bundle.putString("diasintereses",Double.toString(dias));
