@@ -1,5 +1,6 @@
 package intcalculator.com.tel.fx.intcalculator;
 
+import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -19,6 +20,8 @@ public class Result extends AppCompatActivity {
         final TextView Total = findViewById(R.id.tvtotal);
 
         DecimalFormat formato = new DecimalFormat("#,###.00");
+
+        Total.setPaintFlags(Total.getPaintFlags()|Paint.UNDERLINE_TEXT_FLAG);
 
         Bundle bundle = new Bundle();
         bundle = getIntent().getExtras();
