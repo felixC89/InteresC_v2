@@ -19,6 +19,8 @@ public class Result extends AppCompatActivity {
         final TextView Abonados = findViewById(R.id.tvAbonado);
         final TextView Interes = findViewById(R.id.tvInteres);
         final TextView Total = findViewById(R.id.tvtotal);
+        final TextView CapitalInicial = findViewById(R.id.tvresCapinicialValue);
+        final TextView CalculoaFecha = findViewById(R.id.tvcalculofechavalue);
 
         DecimalFormat formato = new DecimalFormat("#,###.00");
 
@@ -28,6 +30,8 @@ public class Result extends AppCompatActivity {
         bundle = getIntent().getExtras();
 
         Pendiente.setText(formato.format(Double.valueOf(bundle.getString("cpendiente")).doubleValue()));
+        CapitalInicial.setText(formato.format(Double.valueOf(bundle.getString("cpendiente")).doubleValue()));
+        CalculoaFecha.setText(bundle.getString("FechaFinal"));
         Tasa.setText(bundle.getString("tasa")+"%");
         Abonados.setText(bundle.getString("cabonado"));
         Interes.setText(formato.format(Double.valueOf(bundle.getString("intereses")).doubleValue())+"("+bundle.getString("diasintereses")+" días)");
