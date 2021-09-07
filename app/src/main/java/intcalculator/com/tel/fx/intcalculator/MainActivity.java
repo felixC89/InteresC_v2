@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
                                 bundle.putString("intereses",Double.toString(interespendiente));
                                 bundle.putString("diasintereses",Double.toString(dias));
                                 bundle.putString("total",Double.toString(capitalactual + interespendiente));
-                                bundle.putString("FechaFinal",ffinal.getText().toString());
+                                bundle.putString("calculoafecha",ffinal.getText().toString());
                                 intent.putExtras(bundle);
 
                                 startActivity(intent);
